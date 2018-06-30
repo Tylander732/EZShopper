@@ -4,11 +4,30 @@
              xmlns:local="clr-namespace:EZShopper"
              x:Class="EZShopper.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid Margin="10">
 
+        <!--Grid Definition-->
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!--Display-->
+
+        <Label Text="EZShopper" 
+           HorizontalOptions="Center"
+           FontSize="Large"
+           VerticalOptions="CenterAndExpand" 
+           FontAttributes="Bold"
+           Grid.Row="0"/>
+        <SearchBar x:Name="searchStores"
+            Placeholder="Search"
+            VerticalOptions="StartAndExpand" Grid.Row="1"/>
+
+    </Grid>
+    
 </ContentPage>

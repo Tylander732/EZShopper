@@ -4,14 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace EZShopper
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
+        public MainPage()
 		{
 			InitializeComponent();
-		}
-	}
+        }
+
+    }
 }
