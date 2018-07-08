@@ -11,7 +11,7 @@
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-  <application android:label="Position Finder" android:icon="@drawable/Icon">
+  <application android:label="EZShopper" android:icon="@drawable/grocery">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC4LCXNAZ0fYfDnRMrPYOlwjS1OG0IrpLU" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
   </application>
