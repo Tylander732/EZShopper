@@ -8,13 +8,14 @@
 
         <!--Grid Definition-->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
         <!--Display-->
@@ -24,20 +25,25 @@
            FontSize="Large"
            VerticalOptions="CenterAndExpand" 
            FontAttributes="Bold"
-           Grid.Row="0"/>
+           Grid.Row="0"
+           Grid.ColumnSpan="2"/>
         
         <SearchBar x:Name="searchStores"
             Placeholder="Search"
-            VerticalOptions="StartAndExpand" Grid.Row="1"/>
+            VerticalOptions="StartAndExpand" 
+            Grid.Row="1" 
+            Grid.ColumnSpan="2"/>
 
-        <Button x:Name = "Partner Stores"   
-            Margin = "10"  
-            Grid.Column="0"/>
-        
-        <Button x:Name = "Favorite Stores"   
-            Margin = "10"  
-            Grid.Column="1"/>
-        
+        <Button 
+            Text = "Partner Stores"    
+            Grid.Column="0"
+            Grid.Row="2"/>
+
+        <Button 
+            Text = "Favorite Stores"
+            Grid.Column="1"
+            Grid.Row="2"/>
+
         <!--Display End-->
     </Grid>
     
