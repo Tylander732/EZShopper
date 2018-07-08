@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:EZShopper"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="EZShopper.MainPage">
 
-    <Grid Margin="10">
-
+    <Grid Margin="10" x:Name="mainGrid">
         <!--Grid Definition-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -15,7 +15,7 @@
             <RowDefinition Height="100"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!--Display-->
@@ -27,7 +27,7 @@
            FontAttributes="Bold"
            Grid.Row="0"
            Grid.ColumnSpan="2"/>
-        
+
         <SearchBar x:Name="searchStores"
             Placeholder="Search"
             VerticalOptions="StartAndExpand" 
@@ -44,7 +44,14 @@
             Grid.Column="1"
             Grid.Row="2"/>
 
-        <!--Display End-->
+        <maps:Map
+            x:Name="StoreMap" 
+            MapType="Street"
+            IsShowingUser="true"
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            />
+
     </Grid>
-    
+
 </ContentPage>
